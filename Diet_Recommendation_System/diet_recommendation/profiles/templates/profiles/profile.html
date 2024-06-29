@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    <h1>Profile of {{ profile.user.username }}</h1>
+    <p>Age: {{ profile.age }}</p>
+    <p>Gender: {{ profile.gender }}</p>
+    <p>Weight: {{ profile.weight }}</p>
+    <p>Height: {{ profile.height }}</p>
+    <p>Dietary Preferences: {{ profile.dietary_preferences }}</p>
+    <p>Allergies: {{ profile.allergies }}</p>
+    <p>Health Goals: {{ profile.health_goals }}</p>
+    <a href="{% url 'edit_profile' %}">Edit Profile</a>
+</body>
+</html>
